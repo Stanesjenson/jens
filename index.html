@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Azure University Login</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(to right, #4facfe, #00f2fe);
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Navigation Bar */
+    .navbar {
+      width: 100%;
+      background-color: #003366;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar .logo {
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #00f2fe;
+    }
+
+    /* Login Container */
+    .content {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-container {
+      background: #fff;
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      width: 350px;
+      text-align: center;
+    }
+
+    .login-container h2 {
+      margin-bottom: 20px;
+      color: #333;
+      font-size: 28px;
+    }
+
+    .login-container p {
+      margin-bottom: 30px;
+      color: #666;
+      font-size: 14px;
+    }
+
+    .input-group {
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    .input-group label {
+      display: block;
+      margin-bottom: 8px;
+      color: #555;
+      font-weight: 600;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    .login-btn {
+      width: 100%;
+      padding: 12px;
+      background: #4facfe;
+      border: none;
+      border-radius: 8px;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      font-weight: 600;
+    }
+
+    .login-btn:hover {
+      background: #00c6fb;
+    }
+
+    .footer-text {
+      margin-top: 20px;
+      font-size: 12px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="#" class="logo">Azure University</a>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Sign Up</a>
+      <a href="#">Profile</a>
+      <a href="#">About Us</a>
+    </div>
+  </nav>
+
+  <div class="content">
+    <div class="login-container">
+      <h2>Azure University Login</h2>
+      <p>Access your student portal</p>
+      <form>
+        <div class="input-group">
+          <label for="email">University Email</label>
+          <input type="email" id="email" name="email" placeholder="name@azure.edu" required>
+        </div>
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        </div>
+        <button type="submit" class="login-btn">Login</button>
+      </form>
+      <div class="footer-text">
+        © 2025 Azure University
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
